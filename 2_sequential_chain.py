@@ -2,6 +2,9 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+import os
+
+os.environ['LANGCHAIN_PROJECT'] = 'Sequential LLM App'
 
 load_dotenv()
 
